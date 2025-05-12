@@ -35,7 +35,9 @@ public class UserService {
         return byChatId.isPresent();
     }
 
-    public Boolean deleteUser(Long chatId) {
-        return null;
+    public boolean deleteUser(Long chatId) {
+        int deletedCount = userRepository.deleteByChatId(chatId);
+        return deletedCount > 0; // Agar 1 yoki undan ko‘p bo‘lsa true, aks holda false
     }
+
 }

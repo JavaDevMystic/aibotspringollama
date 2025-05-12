@@ -44,10 +44,7 @@ public class KeyBoardService {
         row1.add(new KeyboardButton("📜 Show Question History"));
 
         KeyboardRow row2 = new KeyboardRow();
-        row2.add(new KeyboardButton("❌ Delete Question"));
-
-        KeyboardRow row3 = new KeyboardRow();
-        row3.add(new KeyboardButton("⏱ Start Pamidor Timer"));
+        row2.add(new KeyboardButton("⏱ Start Pamidor Timer"));
 
         KeyboardRow row4 = new KeyboardRow();
         row4.add(new KeyboardButton("🧑‍💻 Delete User"));
@@ -55,7 +52,6 @@ public class KeyBoardService {
         List<KeyboardRow> keyboard = new ArrayList<>();
         keyboard.add(row1);
         keyboard.add(row2);
-        keyboard.add(row3);
         keyboard.add(row4);
 
         keyboardMarkup.setKeyboard(keyboard);
